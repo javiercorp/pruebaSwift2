@@ -13,6 +13,7 @@ class onboardingSegundaViewController: UIViewController {
     @IBAction func botonComienzo(_ sender: UIButton) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let mainViewController = storyboard.instantiateViewController(withIdentifier: "main")as! ViewController
+        self.present(mainViewController, animated: true, completion: nil)
     }
     override func viewDidLoad() {
         super.viewDidLoad()
